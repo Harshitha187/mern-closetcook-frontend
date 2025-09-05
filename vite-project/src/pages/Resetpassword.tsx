@@ -12,7 +12,7 @@ const Resetpassword = () => {
   const [pass, setNewPass] = useState("");
   const [otp, setOtp] = useState("");
 
-  const getOtp = async (e) => {
+  const getOtp = async (e:any) => {
     e.preventDefault();
     try {
       axios.defaults.withCredentials = true;
@@ -24,11 +24,15 @@ const Resetpassword = () => {
         toast.error(data.message);
       }
     } catch (error) {
-      toast.error(error.message);
+      if (error instanceof Error) {
+        toast.error(error.message);
+      } else {
+        toast.error("An unexpected error occurred");
+      }
     }
   };
 
-  const getverifyotp = async (e) => {
+  const getverifyotp = async (e:any) => {
     e.preventDefault();
     try {
       axios.defaults.withCredentials = true;
@@ -41,11 +45,15 @@ const Resetpassword = () => {
         toast.error(data.message);
       }
     } catch (error) {
-      toast.error(error.message);
+      if (error instanceof Error) {
+        toast.error(error.message);
+      } else {
+        toast.error("An unexpected error occurred");
+      }
     }
   };
 
-  const submitPass = async (e) => {
+  const submitPass = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
       axios.defaults.withCredentials = true;
@@ -57,7 +65,11 @@ const Resetpassword = () => {
         toast.error(data.message);
       }
     } catch (error) {
-      toast.error(error.message);
+      if (error instanceof Error) {
+        toast.error(error.message);
+      } else {
+        toast.error("An unexpected error occurred");
+      }
     }
   };
 

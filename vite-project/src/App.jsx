@@ -7,6 +7,7 @@ import Emailverify from './pages/Emailverify'
 import Navbar from './components/navbar'
 import { AppProvider } from "./context/appcontext";
   import { ToastContainer, toast } from 'react-toastify';
+import Test from './pages/Test'
 const App = () => {
 
   return (
@@ -19,6 +20,8 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/reset-password" element={<Resetpassword />} />
           <Route path="/email-verify" element={<Emailverify />} />
+          <Route path="/test" element={<Test/>} />
+
         </Routes>
       </div>
     </AppProvider>
