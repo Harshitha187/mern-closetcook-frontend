@@ -51,8 +51,8 @@ const onSubmitHandler = async (e) => {
 
 
   return (
-    <div className="items-center justify-center min-h-screen bg-[url('/src/assets/bgp.jpg')] bg-cover bg-center flex flex-col">
-      <div className="shadow:lg opacity-90 gap-8 flex flex-col items-center justify-center h-150 w-180 bg-slate-900 rounded-lg">
+    <div className="items-center justify-center min-h-screen flex flex-col">
+      <div className="max-w-lgshadow:lg opacity-90 gap-8 flex flex-col items-center justify-center h-150 w-180 bg-slate-900 rounded-lg">
         <h1 className="font-semibold text-4xl">
           {state === "Sign up" ? "Sign Up" : "Login"}
         </h1>

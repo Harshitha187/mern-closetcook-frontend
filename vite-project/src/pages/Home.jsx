@@ -4,7 +4,7 @@ import Header from '../components/header'
 
 const Home = () => {
   return (
-    <div className='items-center justify-center min-h-screen bg-[url("/src/assets/bg.jpg")] bg-cover bg-center flex flex-col'>
+    <div className='items-center justify-center min-h-screen flex flex-col'>
       <Navbar />
       <Header />
     </div>

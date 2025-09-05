@@ -20,7 +20,7 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/reset-password" element={<Resetpassword />} />
           <Route path="/email-verify" element={<Emailverify />} />
-          <Route path="/test" element={<Test/>} />
+          <Route path="/test" element={<Test />} />
 
         </Routes>
       </div>
